@@ -5,7 +5,7 @@ const RATEPRISM_GATEWAY_URL = process.env.RATEPRISM_GATEWAY_URL || "https://agen
 const RATEPRISM_API_TOKEN = process.env.RATEPRISM_API_TOKEN || process.env.RATEPRISM_TOKEN || "";
 const RATEPRISM_TIMEOUT_MS = toInt(process.env.RATEPRISM_TIMEOUT_MS, 60000);
 const RATEPRISM_LINK_BASE_URL =
-  process.env.RATEPRISM_LINK_BASE_URL || "https://meta.rateprism.com";
+  process.env.RATEPRISM_LINK_BASE_URL || "https://www.rateprism.com";
 const RATEPRISM_SUGGESTION_LIMIT = Math.max(1, toInt(process.env.RATEPRISM_SUGGESTION_LIMIT, 20));
 
 export function getConfig() {
