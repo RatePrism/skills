@@ -83,9 +83,15 @@ One JSON line per run; parse internally; never paste into user chat.
 
 Gateway, link base URL, timeouts, tokens (e.g. **`RATEPRISM_GATEWAY_URL`**, **`RATEPRISM_API_TOKEN`**, **`RATEPRISM_LINK_BASE_URL`**) are deployment-specific; use **`rateprism --help`** or ops docs — not specified in depth here.
 
-## Command path in this repo
+## Command path
 
-If `rateprism` is not on `PATH`:
+If `rateprism` is not on `PATH`, run from the **skill root** (`hotel-inquiry/`, the directory that contains `SKILL.md`):
+
+```bash
+node scripts/rateprism.mjs …
+```
+
+If this skill lives inside a monorepo and your cwd is the **repository root**, use:
 
 ```bash
 node skills/hotel-inquiry/scripts/rateprism.mjs …
